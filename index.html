@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html>
+<head>
+	<title> Planets</title>
+<!-- links for scripts and css -->
+<!-- bootstrap: css -->
+  <link   rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+<!-- fontawesome: -->
+  <link 
+    rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+    crossorigin="anonymous">
+<!-- jquery: -->
+<!--   <script 
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous">
+  </script>
+-->
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<!-- jquery ui: -->
+  
+<!-- bootstrap.js: -->
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous">
+  </script>
+<!-- annyang.js voice ability -->
+<script src="annyang.min.js"></script>
+
+
+<!--  main css styles: -->
+  <link rel="stylesheet" href="css/style.css" >
+<!-- main js file: -->
+  <script src="js/script.js"></script>
+<!-- end  links for scripts and css -->
+<!-- THREE 3D JS -->
+            <script src="three.min.js"></script>
+
+
+</head>
+<body class="bg-gunmetal_gray">
+
+<!--  end of : NavBar - this on top on page    -->
+<div data-spy="scroll" data-target="#navbar" data-offset="0">
+<!-- Team Cards - photos of team something similar to jumbotron - on top page  -->
+  <section id="first-page" style="background-image: url('img/2k_stars_milky_way_bg.jpg');" class="first-page">
+    <div>
+      <div class="text-center zoomable display-3 px-3 py-3 mb-5 border-gunmetal_gray text-gunmetal_gray easy_read bg-blue_sapphire easy_read" id="meet_us">
+        <h1>Our Solar System</h1>
+      </div>
+      <div class="container-fluid ">
+        <div id="space" class="col-sm-12"></div>
+        <div class="row perspective-100 py-5 col-sm-12">
+      <!-- #01 - Mercury -->
+          <div class="card text-white bg-transparent mb-3 px-0 col-lg-3 col-md-6 col-sm-12 col-xs-12  zoomable show_animation recomemnded_link" id="mercury_card" link="mercury" >
+            <div class="card-bodypx-0 ">
+              <div class="card-text  text-justify px-2">
+                  <div id="mercury_canva">
+                  </div>      
+              </div>
+              <div class="border-blue_sapphire easy_read bg-gunmetal_gray" id="mercury_card_desc">
+                
+              <p class="card-title display-4 text-center">
+                #1 Mercury
+              </p>
+              <p class="text-right">
+                Search 
+                <i class="fas fa-angle-double-right"></i>
+              </p>
+              </div>
+            </div>
+            <div class="card-footer bg-blue_sapphire">
+    	        <small class="text-peach-orange">
+                Mercury
+              </small>  
+            </div>
+          </div>
+      <!-- #02.Venus -->
+          <div class="card text-white bg-transparent mb-3 px-0 col-lg-3 col-md-6 col-sm-12 col-xs-12  zoomable show_animation recomemnded_link" id="vanus_card"  link="venus">
+            <div class="card-bodypx-0 ">
+              <div class="card-text  text-justify px-2">
+                  <div id="venus_canva">
+                  </div>      
+              </div>
+              <div class="border-gunmetal_gray easy_read bg-blue_sapphire" >
+                
+              <p class="card-title display-4 text-center">
+                #2 Venus
+              </p>
+              <p class="text-right">
+                Search 
+                <i class="fas fa-angle-double-right"></i>
+              </p>
+              </div>
+            </div>
+            <div class="card-footer bg-gunmetal_gray">
+              <small class="text-peach-orange">
+                Venus
+              </small>  
+            </div>
+          </div>
+      <!-- #03.Earth-->
+          <div class="card text-white bg-transparent mb-3 px-0 col-lg-3 col-md-6 col-sm-12 col-xs-12  zoomable show_animation recomemnded_link" id="earth_card" link="earth">
+            <div class="card-bodypx-0 ">
+              <div class="card-text  text-justify px-2">
+                  <div id="earth_canva">
+                  </div>      
+              </div>
+              <div class="border-blue_sapphire easy_read bg-gunmetal_gray" >
+                
+              <p class="card-title display-4 text-center">
+                #3 Earth
+              </p>
+              <p class="text-right">
+                Search 
+                <i class="fas fa-angle-double-right"></i>
+              </p>
+              </div>
+            </div>
+            <div class="card-footer bg-blue_sapphire">
+              <small class="text-peach-orange">
+                Earth
+              </small>  
+            </div>
+          </div>
+      <!-- #04.Mars -->
+          <div class="card text-white bg-transparent mb-3 px-0 col-lg-3 col-md-6 col-sm-12 col-xs-12  zoomable show_animation recomemnded_link" id="mars_card"  link="mars">
+            <div class="card-bodypx-0 ">
+              <div class="card-text  text-justify px-2">
+                  <div id="mars_canva">
+                  </div>      
+              </div>
+              <div class="border-gunmetal_gray easy_read bg-blue_sapphire" >
+                
+              <p class="card-title display-4 text-center">
+                #4 Mars
+              </p>
+              <p class="text-right">
+                Search 
+                <i class="fas fa-angle-double-right"></i>
+              </p>
+              </div>
+            </div>
+            <div class="card-footer bg-gunmetal_gray">
+              <small class="text-peach-orange">
+                Mars
+              </small>  
+            </div>
+          </div>
+        </div>
+        <div class="row perspective-100 py-5 col-sm-12">
+      <!-- Jim _card the singer -->
+         <div class="card text-white bg-transparent mb-3 px-0 col-lg-3 col-md-6 col-sm-12 col-xs-12  zoomable show_animation recomemnded_link" id="jupiter_card" link="jupiter">
+            <div class="card-bodypx-0 ">
+              <div class="card-text text-justify px-2">
+                  <div id="jupiter_canva">
+                  </div>      
+              </div>
+              <div class="border-blue_sapphire easy_read bg-gunmetal_gray" >
+                
+              <p class="card-title display-4 text-center">
+                #5 Jupiter
+              </p>
+              <p class="text-right">
+                Search 
+                <i class="fas fa-angle-double-right"></i>
+              </p>
+              </div>
+            </div>
+            <div class="card-footer bg-blue_sapphire">
+              <small class="text-peach-orange">
+                Jupiter
+              </small>  
+            </div>
+          </div>
+      <!-- #02.Venus -->
+          <div class="card text-white bg-transparent mb-3 px-0 col-lg-3 col-md-6 col-sm-12 col-xs-12  zoomable show_animation recomemnded_link" id="saturn_card" link="saturn">
+            <div class="card-bodypx-0 ">
+              <div class="card-text  text-justify px-2">
+                  <div id="saturn_canva">
+                  </div>      
+              </div>
+              <div class="border-gunmetal_gray easy_read bg-blue_sapphire" >
+                
+              <p class="card-title display-4 text-center">
+                #6 Saturn
+              </p>
+              <p class="text-right">
+                Search 
+                <i class="fas fa-angle-double-right"></i>
+              </p>
+              </div>
+            </div>
+            <div class="card-footer bg-gunmetal_gray">
+              <small class="text-peach-orange">
+                Saturn
+              </small>  
+            </div>
+          </div>
+      <!-- #03.Earth-->
+          <div class="card text-white bg-transparent mb-3 px-0 col-lg-3 col-md-6 col-sm-12 col-xs-12  zoomable show_animation recomemnded_link" id="neptune_card" link="neptune">
+            <div class="card-bodypx-0 ">
+              <div class="card-text  text-justify px-2">
+                  <div id="neptune_canva">
+                  </div>      
+              </div>
+              <div class="border-blue_sapphire easy_read bg-gunmetal_gray" >
+                
+              <p class="card-title display-4 text-center">
+                #7 Neptune
+              </p>
+              <p class="text-right">
+                Search 
+                <i class="fas fa-angle-double-right"></i>
+              </p>
+              </div>
+            </div>
+            <div class="card-footer bg-blue_sapphire">
+              <small class="text-peach-orange">
+                Neptune
+              </small>  
+            </div>
+          </div>
+      <!-- #04.Mars -->
+          <div class="card text-white bg-transparent mb-3 px-0 col-lg-3 col-md-6 col-sm-12 col-xs-12  zoomable show_animation recomemnded_link" id="uranus_card" link="uranus">
+            <div class="card-bodypx-0 ">
+              <div class="card-text  text-justify px-2">
+                  <div id="uranus_canva">
+                  </div>      
+              </div>
+              <div class="border-gunmetal_gray easy_read bg-blue_sapphire" >
+                
+              <p class="card-title display-4 text-center">
+                #8 Uranus
+              </p>
+              <p class="text-right">
+                Search 
+                <i class="fas fa-angle-double-right"></i>
+              </p>
+              </div>
+            </div>
+            <div class="card-footer bg-gunmetal_gray">
+              <small class="text-peach-orange">
+                Uranus
+              </small>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end of : Team Cards - photos of team something similar to jumbotron - on top page  -->
+<section id="photo_section" class="my-0 pb-5" style="background-image: url('img/jumbotron.jpg');">
+  <div>
+<!-- photos  -->
+    <div class="text-center zoomable display-3 mb-4 px-3 py-3 bg-blue_sapphire text-peach-orange border-peach-orange easy_read">
+      Search 
+      <span class="badge badge-secondary" id ="photos_total" ></span> 
+    </div>
+    <div class="container py-5">
+      <small  class="badge badge-pill badge-dark"></small>
+      <div class="input-group col-md-6 px-1 zoomable rounded py-1 bg-blue_sapphire  border-blue_sapphire mb-3" id="search_input_card">
+        <input type="text" class="form-control" placeholder="What to search?" aria-label="What to search?" aria-describedby="button-addon2" id="search_input">
+        <div class="input-group-append">
+        <button class="btn mw-100 bg-gunmetal_gray zoomable-125 searching_go" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div class="card bg-transparent">
+        <div class="card-header text-center zoomable-125">
+          <div class="perspective-100">
+          <div class="card mb-2 pt-2 col-sm-9 zoomable-125 bg-gunmetal_gray easy_read text-blue_sapphire switch" sub="#switch_from_space"  active="false" id="switch_photo">
+            <i class="fa zoomable-125 fas fa-camera-retro">Photo</i>
+            <span class="zoomable-125 invisible">
+              Active
+            </span>
+          </div>
+            <div class="card mb-2 col-sm-9 zoomable-125 bg-gunmetal_gray easy_read text-blue_sapphire switch d-none sub_switch" mumy="#switch_photo" id="switch_from_space" jpl="-1" onclick='this.setAttribute("jpl",-1*this.getAttribute("jpl"));' active="false">
+              <i class="fas fa-question">
+                Only from space?
+              </i>
+              <div class="zoomable div_answer" alternative='<i class="fas fa-check unchecked">Yes. Space only</i>'>
+                <i class="fas fa-times checked">
+                  No. Space+Earth 
+                </i>
+              </div>
+            </div>
+            
+
+          <div class="card mb-2 pt-2 col-sm-9 zoomable-125 bg-gunmetal_gray easy_read text-blue_sapphire switch" active="false" id="switch_video">
+            <i class="far fa zoomable-125 fa-play-circle">Video</i>
+            <span class="zoomable-125 invisible">
+              Active
+            </span>
+            
+          </div>
+          <div class="card mb-2 2 pt-2 col-sm-9 zoomable-125 bg-gunmetal_gray easy_read text-blue_sapphire switch" active="false" id="switch_audio">
+            <i class="fa zoomable-125 fas fa-headphones-alt">Audio</i>
+            <span class="zoomable-125 invisible">
+              Active
+            </span>
+          </div>
+          <div class="card mb-2 col-sm-9 zoomable-125  bg-gunmetal_gray easy_read text-blue_sapphire invisible switch_pagination" sub=".pagination_card" active="false" id="switch_pagination">  
+            <i class="fa mb-4 mt-3 zoomable-125 fas fa-list-ol">Pagination</i>     
+          </div>
+        </div>
+      
+          <div>
+            
+          </div>  
+        
+        </div>
+        <div class="card-body pagination_card hiden d-none" >      
+        </div>
+
+      </div> 
+      <div class="bg-gunmetal_gray rounded easy_read text-blue_sapphire text-center zoomable-125 easy_read">
+        <h1 id="section_title">
+        </h1>
+      </div>
+      <div class="my-5" id= "photo_table">   
+      </div>
+
+    </div>
+     
+    <div class="modal fade " id="Photo_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content" >
+          <div class="modal-header">
+            <h5 class="modal-title" id="photo_modal_title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="modal-body">
+          <div id="photo_modal_image"></div>
+          <div>
+              <div>
+                <h2 class="my_accordion d-none" id="modal_desc_button">Description:</h2>
+                <p id="photo_modal_desc" class="d-none"></p>
+              </div>
+              <div class="modal_alternative_files">
+                <h2 id="modal_files_button" class= "my_accordion d-none">Alternative files: </h2>
+                <ul class="list-group d-none">
+                </ul>
+              </div>
+              <div>
+                
+              <h2 class= "my_accordion d-none" id="modal_info_button">Info:</h2>
+              <table class="table table-hover" id="modal_table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Center</th>
+                    <td id="modal_center">Center</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Date Created</th>
+                    <td id="modal_date"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nasa id</th>
+                    <td id="modal_nasa_id">Nasa id</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Secondary Creator</th>
+                    <td id="modal_creator">@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            <div>
+              <h2 class= "my_accordion" id="modal_keywords_button">keywords: </h2>
+              <div id="photo_modal_keywords">
+              </div>
+            </div>  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- End of  photos   -->
+  </section>
+<section>
+  
+</section>
+
+</body>
+<script type="text/javascript">
+  
+var camera, scene, renderer;
+      var mesh;
+      init();
+      animate();
+      function init() {
+
+        camera = new THREE.PerspectiveCamera( 70,$('#space').width()/ $('#space').width(), 1, 1000 );
+        camera.position.z = 400;
+
+        scene_mercury = new THREE.Scene();
+        scene_venus = new THREE.Scene();
+        scene_earth = new THREE.Scene();
+        scene_mars = new THREE.Scene();
+        scene_jupiter = new THREE.Scene();
+        scene_saturn = new THREE.Scene();
+        scene_neptune = new THREE.Scene();
+        scene_uranus = new THREE.Scene();
+// Setting elements size
+      //when screen's height is greater then its width (pc,laptop,ipod,cell phone holding in usual way)
+      if($('#mercury_canva').width()<= window.innerHeight) 
+      {
+        var radious = $('#mercury_canva').width()*0.75;
+      }
+      else
+      { 
+//when screen's width is greater then its height ( cell phone holding in panoramic way, likely -panoramic TV screen )
+        var radious = window.innerHeight * 0.5;
+      }
+
+var texture = new THREE.TextureLoader().load( 'textures/mercury_very_low.jpg' );
+
+
+var geometry = new THREE.SphereBufferGeometry(radious,100,100);
+        var material = new THREE.MeshBasicMaterial( { map: texture } );
+        mercury = new THREE.Mesh( geometry, material );
+        scene_mercury.add( mercury );
+        renderer_mercury = new THREE.WebGLRenderer( { 
+            alpha: true ,
+           antialias: true } );
+        renderer_mercury.setPixelRatio( window.devicePixelRatio );
+        //Here nad now
+        renderer_mercury.setSize( $('#mercury_canva').width(), $('#mercury_canva').width() );
+        $('#mercury_canva').append( renderer_mercury.domElement );
+
+// mercury_header
+
+scene_mercury_header = new THREE.Scene();
+var texture = new THREE.TextureLoader().load( 'textures/venus_very_low.jpg' );
+var geometry = new THREE.SphereBufferGeometry(radious,100,100);
+        var material = new THREE.MeshBasicMaterial( { map: texture } );
+        venus = new THREE.Mesh( geometry, material );
+        scene_venus.add( venus );  
+        renderer_venus = new THREE.WebGLRenderer( { 
+            alpha: true ,
+           antialias: true } );
+        renderer_venus.setPixelRatio( window.devicePixelRatio );
+        renderer_venus.setSize( $('#venus_canva').width(), $('#venus_canva').width() );
+        $('#venus_canva').append( renderer_venus.domElement );
+        
+var texture = new THREE.TextureLoader().load( 'textures/earth.jpg' );
+var geometry = new THREE.SphereBufferGeometry(radious,100,100);
+        var material = new THREE.MeshBasicMaterial( { map: texture } );
+        earth = new THREE.Mesh( geometry, material );
+        scene_earth.add( earth );
+      //  earth.position.set( -($('#space').width()*0.05), $('#mercury_canva').width()*0.6 , 0 );
+        renderer_earth = new THREE.WebGLRenderer( { 
+            alpha: true ,
+           antialias: true } );
+        renderer_earth.setPixelRatio( window.devicePixelRatio );
+        renderer_earth.setSize( $('#earth_canva').width(), $('#earth_canva').width() );
+        $('#earth_canva').append( renderer_earth.domElement );
+        
+var texture = new THREE.TextureLoader().load( 'textures/mars_very_low.jpg' );
+var geometry = new THREE.SphereBufferGeometry(radious,100,100);
+        var material = new THREE.MeshBasicMaterial( { map: texture } );
+        mars = new THREE.Mesh( geometry, material );
+        scene_mars.add( mars );
+        renderer_mars = new THREE.WebGLRenderer( { 
+            alpha: true ,
+           antialias: true } );
+        renderer_mars.setPixelRatio( window.devicePixelRatio );
+        renderer_mars.setSize( $('#mars_canva').width(), $('#mars_canva').width() );
+        $('#mars_canva').append( renderer_mars.domElement );
+        
+var texture = new THREE.TextureLoader().load( 'textures/jupiter_very_low.jpg' );
+var geometry = new THREE.SphereBufferGeometry(radious,100,100);
+        var material = new THREE.MeshBasicMaterial( { map: texture } );
+        jupiter = new THREE.Mesh( geometry, material );
+        scene_jupiter.add( jupiter );
+        renderer_jupiter = new THREE.WebGLRenderer( { 
+            alpha: true ,
+           antialias: true } );
+        renderer_jupiter.setPixelRatio( window.devicePixelRatio );
+        renderer_jupiter.setSize( $('#jupiter_canva').width(), $('#jupiter_canva').width() );
+        $('#jupiter_canva').append( renderer_jupiter.domElement );
+        
+
+        
+var texture = new THREE.TextureLoader().load( 'textures/saturn_very_low.jpg' );
+var geometry = new THREE.SphereBufferGeometry(radious,100,100);
+        var material = new THREE.MeshBasicMaterial( { map: texture } );
+        saturn = new THREE.Mesh( geometry, material );
+        scene_saturn.add( saturn );
+        renderer_saturn = new THREE.WebGLRenderer( { 
+            alpha: true ,
+           antialias: true } );
+        renderer_saturn.setPixelRatio( window.devicePixelRatio );
+        renderer_saturn.setSize( $('#saturn_canva').width(), $('#saturn_canva').width() );
+        $('#saturn_canva').append( renderer_saturn.domElement );
+        
+var texture = new THREE.TextureLoader().load( 'textures/neptune_very_low.jpg' );
+var geometry = new THREE.SphereBufferGeometry(radious,100,100);
+        var material = new THREE.MeshBasicMaterial( { map: texture } );
+        neptune = new THREE.Mesh( geometry, material );
+        scene_neptune.add( neptune );
+        renderer_neptune = new THREE.WebGLRenderer( { 
+            alpha: true ,
+           antialias: true } );
+        renderer_neptune.setPixelRatio( window.devicePixelRatio );
+        renderer_neptune.setSize( $('#neptune_canva').width(), $('#neptune_canva').width() );
+        $('#neptune_canva').append( renderer_neptune.domElement );
+        
+
+var texture = new THREE.TextureLoader().load( 'textures/uranus_very_low.jpg' );
+var geometry = new THREE.SphereBufferGeometry(radious,100,100);
+        var material = new THREE.MeshBasicMaterial( { map: texture } );
+        uranus = new THREE.Mesh( geometry, material );
+        scene_uranus.add( uranus );
+        renderer_uranus = new THREE.WebGLRenderer( { 
+            alpha: true ,
+           antialias: true } );
+        renderer_uranus.setPixelRatio( window.devicePixelRatio );
+        renderer_uranus.setSize( $('#uranus_canva').width(), $('#uranus_canva').width() );
+        $('#uranus_canva').append( renderer_uranus.domElement );
+        window.addEventListener( 'resize', onWindowResize, false );
+      }
+      function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer_mercury.setSize( $('#mercury_canva').width(), $('#mercury_canva').width() );
+        renderer_venus.setSize( $('#mercury_canva').width(), $('#mercury_canva').width() );
+        renderer_earth.setSize( $('#mercury_canva').width(), $('#mercury_canva').width() );
+        renderer_mars.setSize( $('#mercury_canva').width(), $('#mercury_canva').width() );
+        renderer_jupiter.setSize( $('#mercury_canva').width(), $('#mercury_canva').width() );
+        renderer_saturn.setSize( $('#mercury_canva').width(), $('#mercury_canva').width() );
+        renderer_neptune.setSize( $('#mercury_canva').width(), $('#mercury_canva').width() );
+        renderer_uranus.setSize( $('#mercury_canva').width(), $('#mercury_canva').width() );
+      }
+      function animate() {
+        requestAnimationFrame( animate );
+        mercury.rotation.y += 0.025;
+        venus.rotation.y += 0.025;
+        earth.rotation.y += 0.025;
+        mars.rotation.y += 0.025;
+        jupiter.rotation.y += 0.025;
+        saturn.rotation.y += 0.025;
+        neptune.rotation.y += 0.025;
+        uranus.rotation.y += 0.025;
+     
+        renderer_mercury.render( scene_mercury, camera );
+        renderer_venus.render( scene_venus, camera );
+        renderer_earth.render( scene_earth, camera );
+        renderer_mars.render( scene_mars, camera );
+        renderer_jupiter.render( scene_jupiter, camera );
+        renderer_saturn.render( scene_saturn, camera );
+        renderer_neptune.render( scene_neptune, camera );
+        renderer_uranus.render( scene_uranus, camera );
+      }
+// it remove elements from side
+function clear(screen)
+{
+  $( screen ).children().remove();
+
+}
+  function nasa_load(link)
+{
+       to_go = "https://images-api.nasa.gov/search?keywords={"+link+"}&center=JPL"; 
+          query = $.ajax({
+              type: "GET",
+              url: to_go,
+              dataType: "json",
+              async: false
+          })
+          return query.responseJSON;
+}
+  function update_total(total_hits)
+  {
+    $("#photos_total").text(total_hits+" ");
+  };
+  function open_json(link)
+  {
+          to_go = link; 
+          query = $.ajax({
+              type: "GET",
+              url: to_go,
+              dataType: "json",
+              async: false
+          })
+          return query.responseJSON;
+  }
+  function open_link(link)
+  {
+
+
+
+          query=open_json(link);
+
+          if(query && query.collection)
+          {  
+          update_total(query.collection.metadata.total_hits);          
+          return query;
+          }
+          else
+          {
+            update_total(0);           
+            return false;
+          }
+}
+//https://images-api.nasa.gov/search?keywords={venus }&media_type=video
+//
+
+function bigImg(obj_id)
+{
+  if ($(obj_id).children("img")&&$(obj_id).children("img").attr("src"))
+   {
+    link_img =  "url('";
+    link_img += $(obj_id).children("img").attr("src");
+    link_img += "')";
+    if ($(obj_id).attr("target"))
+    {
+      target= $(obj_id).attr("target");
+    }
+    else
+    {
+      target= $(obj_id).parents("section");
+    }
+    
+    $(target).css("background-image" ,link_img);
+   }
+}
+
+  function making_pagination()
+  {
+        clear(".pagination_card");
+        //console.log(link);
+        if (api.collection.metadata.total_hits>100) 
+        { 
+          pages_number = (api.collection.metadata.total_hits)/100;
+          // I find out that there are some problems with pages >100
+          // Indead of list of elements api answers :
+          // 'reason  "Maximum number of search results have been displayed. Please refine your search."'
+          // this is why here I put limit of pages to 100.
+          if (pages_number>100)
+          {
+           pages_number=100; 
+          }
+        
+        for (var i = 0; i <= pages_number; i+=10) {
+          // setting how many button in one row
+          if (pages_number-i>10)
+            {
+              //for more than 10 button limit is 10
+              limit=10;
+            }
+          else
+            {
+              //else- just but rest of buttons, it appies for last row.
+              // eg can be row of 4 buttons instead of 10 when we have 14 elements
+              limit=pages_number-i;
+            }
+
+          html='<div class="btn-group btn-group-sm px-0 mx-0 my-1" role="group" aria-label="Basic example">';
+          //make row for button group
+          for (var j = 0; j < limit; j++) {       
+          html+=' <button type="button" class="btn btn-secondary zoomable-125 ';
+          if ((i+j)%2==0) 
+            {
+              html+= " bg-blue_sapphire ";
+              html+= " text-gunmetal_gray ";
+              html+= " border-gunmetal_gray ";
+            }
+          else
+            {
+              html+= " bg-gunmetal_gray ";
+              html+= " text-blue_sapphire ";
+              html+=" border-blue_sapphire ";
+            }
+          html+=' " ';
+          html+=' x_question="'+"&page="+(j+i+1)+'" ';
+          html+=' onclick="open_link_question( this )"';      
+          html+=' >'; 
+          html+= (i+j) ;
+          html+='</button> ';
+            }
+          html+='</div>';
+          $(".pagination_card").append(html);
+        }
+        }
+  } 
+  function open_photo(elem)
+  {
+    //x_center,x_date_created,x_description,x_description_508,x_keywords,x_nasa_id,x_secondary_creator,x_title 
+    x_center=$(elem).attr("x_center");
+    x_date_created=$(elem).attr("x_date_created");
+    x_description=$(elem).attr("x_description");
+    x_description_508=$(elem).attr("x_description_508");
+    x_keywords=$(elem).attr("x_keywords");
+    x_keywords=x_keywords.split(',');
+    x_nasa_id=$(elem).attr("x_nasa_id");
+    x_secondary_creator=$(elem).attr("x_secondary_creator");
+    x_title=$(elem).attr("x_title");
+    x_href=$(elem).attr("x_href");
+
+    //media_type="image"
+    x_media_type=$(elem).attr("media_type");
+    x_src=$(elem).children("img").attr("src");
+    //here and now
+    if(x_description)
+    {      
+      regex = /__quote__/gi; 
+      x_description=x_description.replace(regex, ' " ');
+      regex = /__apostrophe__/gi 
+      x_description=x_description.replace(regex, "'");
+      $("#photo_modal_desc").text(x_description);
+      $("#photo_modal_desc").removeClass("d-none");
+      $("#photo_modal_desc").siblings().removeClass("d-none");
+      
+    }
+    if(x_title)
+    {      
+      regex = /__quote__/gi; 
+      x_title=x_title.replace(regex, ' " ');
+      regex = /__apostrophe__/gi 
+      x_title=x_title.replace(regex, "'");
+      $("#photo_modal_title").text(x_title);
+    }
+    if (x_center)
+    {
+      $("#modal_center").text(x_center);
+      $("#modal_center").parent().removeClass("d-none");
+      
+      $("#modal_table").removeClass("d-none");
+      $("#modal_info_button").removeClass("d-none");
+    }
+    else
+    {
+      $("#modal_center").text("");
+      $("#modal_center").parent().addClass("d-none");
+    }
+
+    if (x_date_created)
+    {
+      $("#modal_date").text(x_date_created);
+      $("#modal_date").parent().removeClass("d-none");
+
+      $("#modal_table").removeClass("d-none");
+      $("#modal_info_button").removeClass("d-none");
+    }
+    else
+    {
+      $("#modal_date").text("");
+      $("#modal_date").parent().addClass("d-none");
+    }
+
+    if (x_nasa_id)
+    {
+      $("#modal_nasa_id").text(x_nasa_id);
+      $("#modal_nasa_id").parent().removeClass("d-none");
+
+      $("#modal_table").removeClass("d-none");
+      $("#modal_info_button").removeClass("d-none");
+    }
+    else
+    {
+      $("#modal_nasa_id").text("");
+      $("#modal_nasa_id").parent().addClass("d-none");
+    }
+
+    if (x_secondary_creator)
+    {
+      $("#modal_creator").text(x_secondary_creator);
+      $("#modal_creator").parent().removeClass("d-none");
+    }
+    else
+    {
+      $("#modal_creator").text("");
+      $("#modal_creator").parent().addClass("d-none");
+    }
+
+    if ((!x_secondary_creator)&&(!x_nasa_id)&&(!x_date_created)&&(!x_center)) 
+    {
+      $("#modal_table").addClass("d-none");
+      $("#modal_info_button").addClass("d-none");
+    }
+    //x_media_type
+    $("#photo_modal_image").children().remove();
+    if (x_media_type =="image")
+    {
+      //here now
+      if(x_href)
+      {     
+          query = $.ajax({
+              type: "GET",
+              url: x_href,
+              dataType: "json",
+              async: false
+          })
+          query=query.responseJSON;
+          console.log(query);
+          //here 17
+          if(query)
+          {
+            $(".modal_alternative_files").removeClass("d-none");
+            $(".modal_alternative_files").children(".list-group").children().remove();
+            $("#modal_files_button").removeClass("d-none");
+          for (key in query) 
+          {
+            if (query[key].includes('.jpg'))
+              {
+                console.log(query[key]);
+                html='<li class="list-group-item">';
+                html+='<a href="';
+                html+=query[key];
+                html+='" target="blank">';
+                html+=query[key];
+                html+="</a>";
+                html+="</li>";
+                $(".modal_alternative_files").children(".list-group").append(html);
+              }
+
+                //Default photo will be ~orig.jpg
+                if (query[key].includes('~orig.jpg'))
+                {
+                  html='<img src="'+ query[key] +'" class="col-12" >';
+                  $("#photo_modal_image").append(html);   
+                }
+
+          }
+          }
+          console.log(query.responseJSON);
+      }
+    }
+    if (x_media_type =="video")
+    {
+      //here now
+      if(x_href)
+      {     
+          query = $.ajax({
+              type: "GET",
+              url: x_href,
+              dataType: "json",
+              async: false
+          })
+          query=query.responseJSON;
+          html='<video class="col-sm-12" controls>'
+          for (key in query) 
+          {
+            if (query[key].includes('.mp4'))
+            {
+              //sunday here
+              html+=  '<source src="'
+              html+=  query[key]
+              html+=  '" type="video/mp4">'
+               // <source src="movie.ogg" type="video/ogg">
+              //html='<img src="'+ query[key] +'" class="col-12" >';
+            }
+            if (query[key].includes('.vtt')  || query[key].includes('.str'))
+            {
+              //sunday here
+              html+='<track src="';
+              html+=  query[key];
+              html+='" kind="captions" srclang="no" label="Subtitles"></track>';
+            }
+
+          }
+              html+=  'Your browser does not support the video tag.'
+              html+= '</video> '
+              $("#photo_modal_image").append(html);   
+          console.log(query.responseJSON);
+      }
+    }
+    if (x_media_type =="audio")
+    {
+      //here now
+      if(x_href)
+      {     
+          query = $.ajax({
+              type: "GET",
+              url: x_href,
+              dataType: "json",
+              async: false
+          })
+          query=query.responseJSON;
+  //<source src="horse.ogg" type="audio/ogg">
+  //<source src="horse.mp3" type="audio/mpeg">
+          html='<audio class="col-sm-12" controls>'
+          for (key in query) 
+          {
+            if (query[key].includes('.mp3'))
+            {
+              //sunday here
+              html+=  '<source src="'
+              html+=  query[key]
+              html+=  '" type="audio/mpeg">'
+               // <source src="movie.ogg" type="video/ogg">
+              //html='<img src="'+ query[key] +'" class="col-12" >';
+            }
+          }
+              html+=  'Your browser does not support the video tag.'
+              html+= '</audio>'
+              $("#photo_modal_image").append(html);   
+          console.log(query.responseJSON);
+      }
+    }
+
+
+      //$("#photo_modal_image").attr("src",);
+ 
+ //here now
+    $("#photo_modal_keywords").children().remove();
+    for (key in x_keywords) 
+    {
+      $("#photo_modal_keywords"). append('<button type="button" class="btn btn-secondary my-2 mx-2" onclick="link_to_api(this)">'+x_keywords[key]+'</button>')
+    }
+    $("#Photo_Modal").modal('show');  
+  }
+    $('#Photo_Modal').on('hidden.bs.modal', function (e) {
+        $("#photo_modal_image").children().remove();
+        $("#photo_modal_keywords").children().remove();
+    
+  })
+  function make_photo_row(i,j,api,page,link)
+  {
+    if (api.collection && api.collection.items && api.collection.items[(i+j)]) {
+
+          html='<div class="card my-3 mb-5 px-1 show_animation will_photo rounded py-1';
+          if ((j+i)%2==0)
+          {
+            html+=" bg-blue_sapphire ";
+            html+=" text-gunmetal_gray ";
+          }
+          else
+          {
+            html+=" bg-gunmetal_gray ";
+            html+=" text-blue_sapphire ";
+          }
+          if(link)
+          {
+            html+=" link_loader "; 
+          }
+          // All photos will zoom on hover, but not link_loader because otherwise is too big
+          else 
+          {
+            html+=" zoomable-125 ";
+          }
+          html+='" ';
+          html+=' id="card_photo_';
+          html+= page ;
+          html+= "_" ;
+          html+= i ;
+          html+= '_'+j+'" ';
+          if(link)
+          {
+            html+=' link= "'; 
+            html+= link;
+            html+=' " '; 
+          }
+          html+=' onclick="open_photo(this)" onmouseover="bigImg(this)"';
+          if (api.collection.items[i+j].data)
+          {
+             if (api.collection.items[i+j].href)
+            { 
+              x_href= api.collection.items[i+j].href;
+              html+='x_href="';
+              html+=x_href;
+              html+='"';
+            }
+            if (api.collection.items[i+j].data[0].center) 
+            {  
+              x_center= api.collection.items[i+j].data[0].center ;
+              regex = /"/gi; 
+              x_center=x_center.replace(regex, " __quote__ ");
+              regex = /'/gi; 
+              x_center=x_center.replace(regex, "__apostrophe__");    
+              html+='x_center="';
+              html+=x_center;
+              html+='"';
+            }
+            if (api.collection.items[i+j].data[0].date_created) 
+            {
+              x_date_created= api.collection.items[i+j].data[0].date_created ;
+              regex = /"/gi; 
+              x_date_created=x_date_created.replace(regex, " __quote__ ");
+              regex = /'/gi; 
+              x_date_created=x_date_created.replace(regex, "__apostrophe__");          
+              html+='x_date_created="';
+              html+=x_date_created;
+              html+='"';
+            }
+            if (api.collection.items[i+j].data[0].description) 
+            {
+              x_description= api.collection.items[i+j].data[0].description ;
+              regex = /"/gi; 
+              x_description=x_description.replace(regex, " __quote__ ");
+              regex = /'/gi; 
+              x_description=x_description.replace(regex, "__apostrophe__");
+              html+='x_description="';
+              html+=x_description;
+              html+='"';
+            }
+            if (api.collection.items[i+j].data[0].description_508)
+            {
+              x_description_508= api.collection.items[i+j].data[0].description_508 ;
+              regex = /"/gi; 
+              x_description_508=x_description_508.replace(regex, " __quote__ ");
+              regex = /'/gi; 
+              x_description_508=x_description_508.replace(regex, "__apostrophe__");
+              html+='x_description_508="';
+              html+=x_description_508;
+              html+='" ';
+            }
+            if (api.collection.items[i+j].data[0].nasa_id) 
+            {
+              x_nasa_id= api.collection.items[i+j].data[0].nasa_id ;
+              regex = /"/gi; 
+              x_nasa_id=x_nasa_id.replace(regex, " __quote__ ");
+              regex = /'/gi; 
+              x_nasa_id=x_nasa_id.replace(regex, "__apostrophe__");
+              html+='x_nasa_id="';
+              html+=x_nasa_id;
+              html+='"';
+            }
+            if (api.collection.items[i+j].data[0].secondary_creator) 
+            {
+              x_secondary_creator= api.collection.items[i+j].data[0].secondary_creator ;
+              regex = /"/gi; 
+              x_secondary_creator=x_secondary_creator.replace(regex, " __quote__ ");
+              regex = /'/gi; 
+              x_secondary_creator=x_secondary_creator.replace(regex, "__apostrophe__");
+              html+='x_secondary_creator="';
+              html+=x_secondary_creator;
+              html+='"';
+            }
+            if (api.collection.items[i+j].data[0].title)
+            {
+              x_title= api.collection.items[i+j].data[0].title ;
+              regex = /"/gi; 
+              x_title=x_title.replace(regex, " __quote__ ");
+              regex = /'/gi; 
+              x_title=x_title.replace(regex, "__apostrophe__");
+              html+='x_title="';
+              html+=x_title;
+              html+='"';
+            }
+            if (api.collection.items[i+j].data[0].keywords) 
+            {
+              x_keywords= api.collection.items[i+j].data[0].keywords ;
+            //x_keywords=x_keywords.replace('"', " __quote__ ");
+            //x_keywords=x_keywords.replace("'", "__apostrophe__");
+              html+='x_keywords="';
+              html+=x_keywords;
+              html+='"';
+            }
+            if (api.collection.items[i+j].data[0].media_type) 
+            {
+              x_media_type= api.collection.items[i+j].data[0].media_type ;
+              x_media_type=x_media_type.replace('"', " __quote__ ");
+              x_media_type=x_media_type.replace("'", "__apostrophe__");
+              html+='media_type="';
+              html+=x_media_type;
+              html+='"';  
+            }
+          }
+              html+='>';
+          html+='<img class="card-img-top border-blue_sapphire modal_triger zoomable"  x_src="';
+          // It prevent some bugs- some api elements have no links array[], or even no items array, script is crashing after face this problem, therefore I check if links array exists before runing fuction.  looks badly works well 
+          if ( api.collection.items[(i+j)].links && api.collection.items[(i+j)].links[0].href)
+          {
+            html+=api.collection.items[(i+j)].links[0].href;
+          }
+          html+='" ';
+          html+=' id="photo_img_';
+          html+=((page*100)+1+i+j).toString();
+          html+='"';
+          html+=' alt="Card image cap"';
+            html+=' style=" max-height:';
+            // some images are sooo long
+            // eg. 5 * screen height 
+            // here I limited image height to one window.height()
+            html+= $(window).height();
+            html+='px ;" ';
+          html+='>';
+          if (api.collection.items[(i+j)].data[0].title) 
+          {
+            html+='<p class="card-title easy_read"> ';
+            html+=((page*100)+1+i+j).toString();
+            html+='. ';
+            html+=api.collection.items[(i+j)].data[0].title;
+            
+            html+='</p>';
+          }
+          if (x_media_type=="video")
+          {
+            html+='<div class="card-img-overlay">';
+            html+='<i class="far fa-5x zoomable-125 fa-play-circle"></i>';
+            html+='</div>';
+          }
+          else if(x_media_type=="image")
+          {
+            html+='<div class="card-img-overlay">';
+            html+='<i class="fa-5x zoomable-125 fas fa-camera-retro"></i>';
+            html+='</div>';  
+          }
+          else if(x_media_type=="audio")
+          {
+            html+='<div class="card-img-overlay">';
+            html+='<i class="fa-5x zoomable-125 fas fa-headphones-alt"></i>';
+            html+='</div>';  
+          }
+   
+          html+='</div>';
+          if(link)
+          {
+            html+='<div class="alert bg-gunmetal_gray border-blue_sapphire text-blue_sapphire text-center" role="alert">';
+            
+            html+='<P >Time for page: <B>'+ (parseInt(page)+1) + "</B></P>";
+            html+='<P ><B>';
+            html+= parseInt(api.collection.metadata.total_hits)-((page+1)*100) ; 
+            html+="</B> more photos to see </P>";
+            html+='</div>';
+          }
+          return html;
+    }
+ }
+ function render_do_you_mean(do_you_mean){
+  html+= '<p class="text-center">';  
+          html+= 'Do you mean:';
+          html+= '</p>';
+        for (key in do_you_mean) 
+        { 
+          html+= '<button type="button" class="btn btn-secondary mx-3" onclick="link_to_api(this)">';
+          html+= do_you_mean[key].word;
+          html+='</button>';
+        }
+ } 
+
+ function f_do_you_mean(query)
+ {
+  console.log(query);
+      // Searching words that sound similar to query and have connection to nasa 
+      html="<span></span>";
+      question= 'https://api.datamuse.com/words?ml=nasa&sl=' ;
+      question+=query;
+      do_you_mean = open_link(question);   
+          html+= '<div class="text-center">';
+      if (do_you_mean!="") 
+      {
+        // if there is something return this
+        render_do_you_mean(do_you_mean);
+      }
+      else
+        {
+          // if not
+          // Searching words with similar spelling - spelling mistake
+          question= 'https://api.datamuse.com/words?ml=space&sl=' ;
+          question+=query;
+          //here
+          console.log(question);
+          do_you_mean = open_json(question);
+          console.log(do_you_mean);
+          if (do_you_mean!="") 
+          {
+            // if yes - return
+            render_do_you_mean(do_you_mean);
+          }
+         else
+          {
+            // if not - is nothing to show
+            html+= '<P>';
+            html+= "So sorry to say that, but:";
+            html+='</P>'; 
+            html+= '<P>';
+            html+= "In NASA database is nothing about:<B>";
+            html+= query;
+            html+='</B></P>'; 
+            html+= '<P>';
+            html+= "and nothing about words that sound similar or has similar spelling to :<B>";
+            html+= query;
+            html+='</B></P>'; 
+            html+= '<P>';
+            html+= "Try again with other word";
+            html+='</P>'; 
+          }
+        }
+      return html;
+ }
+ function make_galery(api,page,pagination_kill)
+ {
+  console.log("make_galery is gonna open: "+api.collection.href+" page number: "+page);
+  //  If api generates empty set :
+  //  1.  Generate infor card
+  //  2.  Looking for symilar words in other api - datamouse
+  //      https://api.datamuse.com/words?ml=nasa&sl=kurwa
+  if (api.collection.items.length<=0)
+  {
+    console.log("empty set");
+    html='<div class="card">';
+    html+='<div class="card-header bg-gunmetal_gray text-blue_sapphire">';
+    html+='Empty Set';
+    html+='</div>';
+    html+='<div class="card-body border-blue_sapphire">';
+    html+=' <blockquote class="blockquote mb-0">';
+    html+='<p>Nothing to show, we do not have anything about: <span class="font-weight-bold border-blue_sapphire bg-gunmetal_gray">"';
+    query=api.collection.href;
+    query=query.split("keywords=");
+    query=query[query.length-1];
+    query=query.split("&");
+    query=query[0];
+    query=query.replace("{","");
+    query=query.replace("}","");
+    html+=query;
+    html+='"</span></p>';
+      //console.log(do_you_mean(query));
+      html+= f_do_you_mean(query);
+    
+    html+= '</div>';
+    //html+='<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>';
+    html+='</blockquote>';
+    html+='</div>';
+    html+='</div>';
+  }
+  else
+  {
+    if (api.collection.items.length<3)
+      {
+        
+        index=1;
+      }
+    else
+      {
+        index=3;
+      }
+    if(!pagination_kill)
+    {
+      if (api.collection.items.length>=100) 
+        {
+            clear(".pagination_card");
+            $("#switch_pagination").removeClass("invisible");
+        }
+      else
+        {
+          clear(".pagination_card");
+          $("#switch_pagination").addClass("invisible");
+        }
+    }
+
+    for (var i = 0 ; i <= api.collection.items.length-index; i+=index) {
+      if (api.collection.items[i]) 
+        //&& api.collection.items[i].links && api.collection.items[i].links[0].href)
+      {
+        //here
+        html=''
+        html+='<div class="card-columns col-sm-12">';
+        /*if (3 >= api.collection.items.length-1-i) 
+        {
+
+        }*/
+        
+        for (var j = 0; j < 3; j++) {
+          if (api.collection.items[i+j])
+          {
+          html+=make_photo_row(i,j,api,page);
+          }  
+        }
+        html+='</div>';
+    }
+   var div = document.createElement('div');
+        $(div).html(html);
+        $("#photo_table").append(div);
+  }
+        if (api.collection.links)
+        {
+          len= api.collection.links.length-1;
+        }
+        else
+        {
+          len=-1;
+        }
+          if (len>=0) 
+          {
+            if (api.collection.links[len].prompt=="Next")
+            {
+              html=make_photo_row(api.collection.items.length-1,0,api,page,api.collection.links[len].href);
+            }
+            else
+            {
+            console.log(api.collection.items.length - i);
+            console.log("1222");
+
+            to_do=api.collection.items.length - i;
+            
+            html=' ';
+              html+='<div class="card-columns col-sm-12">';
+              for (var j = 0; j <= to_do; j++) 
+              {
+                if (api.collection.items[i+j])
+                {
+                  html+=make_photo_row(api.collection.items.length-to_do,j,api,page);
+                }  
+              }
+        html+='</div>';
+            //html=make_photo_row(api.collection.items.length-to_do,0,api,page); 
+            console.log(api.collection.items[to_do]);
+            }
+          }
+          else
+          {
+            html=make_photo_row(api.collection.items.length-1,0,api,page);
+          
+          } 
+  }
+        
+        var div = document.createElement('div');
+        $(div).html(html);
+        $("#photo_table").append(div);
+        }
+//update_total();
+
+function search(obj)
+{
+  clear("#photo_table");
+  section_title="";
+  query="https://images-api.nasa.gov/search?keywords={";
+  query+=obj;
+  query+="}";
+  // 03/04
+    if($("#switch_photo").attr("active")=="true") 
+    {
+      query+="&media_type=image";
+      section_title+="Photos ";
+      if ($("#switch_from_space").attr("jpl")=='1') 
+      {
+        query+="&center=JPL";
+        section_title+="from space ";
+      }
+    }
+    if($("#switch_audio").attr("active")=="true") 
+    {
+      query+="&media_type=audio";
+      section_title+="Audios ";
+    }
+    if($("#switch_video").attr("active")=="true") 
+    {
+      query+="&media_type=video";
+      section_title+="Videos ";
+    }
+    section_title+="about "+obj;
+    //here
+    section_title
+    regex = /%20/gi; 
+      section_title=section_title.replace(regex, ' ');
+    
+    $("#section_title").text(section_title);
+    api=open_link(query);
+    if (api)
+    {
+
+      page=0;
+      //update_total();
+      make_galery(api,page);
+    }
+}
+$('.searching_go').click(function()
+{
+  query=($(this).parent().siblings("input").val());
+  search(query);
+}); 
+function link_to_api(el_link){
+      clear("#photo_table");
+      //page=0;
+      //query="https://images-api.nasa.gov/search?keywords={";
+      query=($(el_link).text());
+      //query+="}";
+      //here
+      //search(obj)
+      search(query);
+
+      /*if (api)
+      {
+        make_galery(api,page);
+      }*/
+    };
+function open_link_question(obj)
+{
+
+  link= api.collection.href;
+        
+  //here 03/04
+  question=$(obj).attr("x_question");
+  //if(question)
+  page=$(obj).text();
+  console.log(link);
+  console.log(question);
+  clear("#photo_table");
+      
+  api=open_link(link+question);
+  if (api)
+  {
+    make_galery(api,page,"no");
+  }
+
+}
+
+$(".switch_pagination").click(function(){
+  sub=$(this).attr("sub");
+  $(sub).toggleClass("d-none"); 
+  
+  $(this).children("span").toggleClass("invisible");
+  making_pagination();
+});
+
+$(".switch").click(function(){
+  sub=$(this).attr("sub");
+  $(sub).toggleClass("d-none");
+  if ($(this).attr("active")=="true")
+  {
+    $(this).attr("active","false");
+  }
+  else if ($(this).attr("active")=="false") 
+  {
+    $(this).attr("active","true");
+  }
+  
+  $(this).siblings().not( $(this).attr("sub")).not($(this).attr("mumy") ).attr("active","false");
+  
+  $(this).children("span").removeClass("invisible");
+  $(this).siblings().not( $(this).attr("sub")).not($(this).attr("mumy") ).children("span").addClass("invisible");
+  
+  $(this).siblings().not( $(this).attr("sub")).not($(this).attr("mumy") ).addClass("opacity-50");
+  $(this).siblings().not( $(this).attr("sub")).not($(this).attr("mumy") ).addClass("small_0_9");
+  $(this).removeClass("opacity-50");
+  $(this).removeClass("small_0_9");
+  $(this).siblings(".sub_switch").not( $(this).attr("sub")).not($(this).attr("mumy") ).addClass("d-none");
+  
+// filtering data after succesful searching
+  if (api) 
+  {
+    query=api.collection.href;
+    if (query.includes("keywords={"))
+    {
+      separator_l="{";
+      separator_r="}";
+      query=query.split("keywords={");
+    }
+    else if(query.includes("keywords=%7B"))
+    {
+      separator_l="%7B";
+      separator_r="%7D";
+      query=query.split("keywords=%7B");
+    }
+      //"https://images-api.nasa.gov/search?media_type=video&keywords=%7Bmars%7D&page=3"
+    query=query[1];
+    query=query.split(separator_r);
+    query=query[0];
+    query=search(query);
+  }
+});
+
+$("#switch_from_space").click(function(){
+  alternative=$(this).children("div").attr("alternative");
+  value=$(this).children("div").html();
+
+  $(this).children("div").attr("alternative",value);
+  $(this).children("div").html(alternative);
+});
+
+$(".recomemnded_link").click(function()
+{
+  //04/04
+  link=$(this).attr("link");
+  search(link);
+  //$.scrollTo($('#search_input'), 1000);
+  $('html, body').animate({
+        scrollTop: $("#search_input_card").offset().top
+    }, 2000);
+  $("#search_input").val(link);
+});
+
+function do_them_smaller(obj)
+{
+  $(obj).siblings().toggleClass("smallable_3d_left");
+  $(obj).siblings().toggleClass("opacity-75");
+}
+$(".switch , .switch_pagination").hover(function(){
+  do_them_smaller($(this));
+});
+
+$(".my_accordion").click(function(){
+  $(this).siblings().toggleClass("d-none");
+});
+
+
+// unfortunetely this library works only with chrome now :(
+if (annyang) {
+  alert("Works");
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'show tps report': function() {
+      $('#tpsreport').animate({bottom: '-100px'});
+    }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+//default data:
+api=false;
+/*
+$(".div_answer").click(function(){
+
+});
+*/
+
+
+// Default values
+//api=open_link("https://images-api.nasa.gov/search?keywords={moon}&media_type=video");
+//page=0;
+//make_galery(api,page);
+  /*
+    center: "src"
+   nasa_id: "PIA12306"
+   secondary_creator: "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington"
+   title: "Tip of the Crescent"
+keywords: (2) […]
+​​
+0: "Mercury"
+​​
+1: "MESSENGER"
+​​
+length: 2
+​​
+*/
+</script>
+</html>
